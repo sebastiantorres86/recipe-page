@@ -1,8 +1,8 @@
 import React from "react";
-import { Header } from "../Components";
+import { Header, Main } from "../Components";
 import img from "../assets/photo1.png";
 
-const Main = () => {
+const Home = () => {
   return (
     <>
       <Header
@@ -13,8 +13,9 @@ const Main = () => {
         image={img}
         alt={"Chessecake"}
       />
+      <Main />
     </>
   );
 };
 
-export default Main;
+export default Home;

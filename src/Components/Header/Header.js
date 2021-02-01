@@ -1,10 +1,10 @@
 import React from "react";
-import { Div, ImageWrapper, Subheading } from "./Header.styled";
+import { Container, Div, ImageWrapper, Subheading } from "./Header.styled";
 import SixDots from "../../assets/6dots.svg";
 
 const Header = ({ heading, subheading, image, alt }) => {
   return (
-    <>
+    <Container>
       <h1>{heading}</h1>
       <Div>
         <ImageWrapper src={SixDots} />
@@ -12,7 +12,7 @@ const Header = ({ heading, subheading, image, alt }) => {
       </Div>
 
       <img src={image} alt={alt} />
-    </>
+    </Container>
   );
 };
 

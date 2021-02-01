@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  margin-bottom: 24px;
+
+  @media only screen and (min-width: ${({ theme }) => theme.desktop}) {
+    margin-bottom: 48px;
+  }
+`;
+
 export const Div = styled.div`
   display: flex;
   align-items: baseline;
